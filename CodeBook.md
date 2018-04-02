@@ -1,4 +1,4 @@
-VARIABLE DESCRIPTION
+# Variable Description
 featNames: This variable contains the information in features.txt
 X_test: This variable contains the information in X_test.txt
 Y_test: This variable contains the information in y_test.txt
@@ -12,7 +12,7 @@ Xmodtrain: This variable is a data frame which first column is the subject id, t
 Xmerge: This variable is a data frame that merge Xmodtest and Xmodain and is ordered throught the subject feature
 result: This data frame contains all thje combinations of subject and activity and each combination has the mean for all of the other variables
 
-DATA AND TRANSFORMATION
+# Data and Transformation
 We read and save the data from feautes.txt and the we search using grep for feautres that contains the word mean or std in order to keep the features that we are interested on and save it in featsToUse
 We read and save the data from X_test.txt that contains the 561 vector features, y_test.txt that contains the activity label and subject_test.txt that contains the subject id. Then we eliminate the features in X_test that dont appear inn featsToUse, then we proceed to join the Xmodtest (X_test without the noninterested features) , Y_test and subjectestX. We name each column with the descriptive name using the names of the 561 feature vector and the literals "subject" and "activityLabel".
 We repeat the process above but this time for the train data
