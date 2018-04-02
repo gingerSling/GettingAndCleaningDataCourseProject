@@ -1,6 +1,4 @@
-run_analysis <-function(directory){
-  #Sets the working directory where the files are located
-  setwd(directory)
+run_analysis <-function(){
   #We read the features names
   featNames<-read.table("features.txt")
 #We will begin with the test data
