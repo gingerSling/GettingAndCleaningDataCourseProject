@@ -18,3 +18,4 @@ We read and save the data from X_test.txt that contains the 561 vector features,
 We repeat the process above but this time for the train data
 We check that all the rows of Xmodtest and Xmodtrain are complete. Then we merge the Xmodtest and Xmodtrain into Xmerge using rbind.
 We proceed to agroup all the possible combinations of subject and activityLabel and calculate the mean for each combination of all the other variables and store these results in the variable result.
+We proceed to change the activities label to a more understanding label.

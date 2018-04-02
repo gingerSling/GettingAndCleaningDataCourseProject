@@ -56,5 +56,20 @@ run_analysis <-function(){
       
     }
   }
+  #We change the activityLabel to a more understanding value
+  activity<-c("WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS","SITTING","STANDING","LAYING")
+  result[,2]<-gsub("1",activity[1],result[,2])
+  result[,2]<-gsub("2",activity[2],result[,2])
+  result[,2]<-gsub("3",activity[3],result[,2])
+  result[,2]<-gsub("4",activity[4],result[,2])
+  result[,2]<-gsub("5",activity[5],result[,2])
+  result[,2]<-gsub("6",activity[6],result[,2])
+
+  Xmerge[,2]<-gsub("1",activity[1],Xmerge[,2])
+  Xmerge[,2]<-gsub("2",activity[2],Xmerge[,2])
+  Xmerge[,2]<-gsub("3",activity[3],Xmerge[,2])
+  Xmerge[,2]<-gsub("4",activity[4],Xmerge[,2])
+  Xmerge[,2]<-gsub("5",activity[5],Xmerge[,2])
+  Xmerge[,2]<-gsub("6",activity[6],Xmerge[,2])
   result
 }
